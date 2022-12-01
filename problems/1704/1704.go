@@ -34,5 +34,6 @@ func halvesAreAlike(s string) bool {
 }
 
 func main() {
-	fmt.Println(halvesAreAlike("book"))
+	fmt.Println(halvesAreAlike("book"))     // true
+	fmt.Println(halvesAreAlike("textbook")) //false
 }

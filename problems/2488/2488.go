@@ -1,9 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
 func countSubarrays(nums []int, k int) int {
 	var idx int
 	for i, n := range nums {
@@ -53,12 +49,4 @@ func countSubarrays(nums []int, k int) int {
 	}
 
 	return count
-}
-
-func main() {
-	fmt.Println(countSubarrays([]int{3, 2, 1, 4, 5}, 4))    // 3
-	fmt.Println(countSubarrays([]int{2, 3, 1}, 3))          // 1
-	fmt.Println(countSubarrays([]int{2, 5, 1, 4, 3, 6}, 1)) // 3
-	fmt.Println(countSubarrays([]int{1}, 1))                // 1
-	fmt.Println(countSubarrays([]int{2, 1, 4, 3}, 2))       // 3
 }

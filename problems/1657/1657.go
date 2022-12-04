@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func closeStrings(word1 string, word2 string) bool {
 	// both words must have the same length
 	// otherwise it is impossible to make
@@ -48,13 +46,4 @@ func closeStrings(word1 string, word2 string) bool {
 	}
 
 	return true
-}
-
-func main() {
-	fmt.Println(closeStrings("abc", "bca"))         // true
-	fmt.Println(closeStrings("a", "aa"))            // false
-	fmt.Println(closeStrings("cabbba", "abbccc"))   // true
-	fmt.Println(closeStrings("cabbba", "aabbss"))   // false
-	fmt.Println(closeStrings("uau", "ssx"))         // false
-	fmt.Println(closeStrings("abbzzca", "babzzcz")) // false
 }

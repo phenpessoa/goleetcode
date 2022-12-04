@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 var vowels = []rune{'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'}
 
 func isVowel(r rune) bool {
@@ -31,9 +29,4 @@ func halvesAreAlike(s string) bool {
 	}
 
 	return countA == countB
-}
-
-func main() {
-	fmt.Println(halvesAreAlike("book"))     // true
-	fmt.Println(halvesAreAlike("textbook")) //false
 }

@@ -1,9 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
 func minimumAverageDifference(nums []int) int {
 	var (
 		smallest int = 1<<63 - 1
@@ -43,15 +39,4 @@ func minimumAverageDifference(nums []int) int {
 	}
 
 	return idx
-}
-
-func main() {
-	fmt.Println(minimumAverageDifference([]int{2, 5, 3, 9, 5, 3}))           // 3
-	fmt.Println(minimumAverageDifference([]int{0}))                          // 0
-	fmt.Println(minimumAverageDifference([]int{0, 1, 0, 1, 0, 1}))           // 0
-	fmt.Println(minimumAverageDifference([]int{1, 2, 3, 4, 5}))              // 0
-	fmt.Println(minimumAverageDifference([]int{2, 5, 5, 4}))                 // 2
-	fmt.Println(minimumAverageDifference([]int{5, 4, 3, 2, 1}))              // 1
-	fmt.Println(minimumAverageDifference([]int{8, 2, 6, 18, 10, 6, 20, 15})) // 0
-	fmt.Println(minimumAverageDifference([]int{4, 2, 0}))                    // 2
 }
